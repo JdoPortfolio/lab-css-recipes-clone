@@ -24,12 +24,14 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /* CSS */
 
 p {
-  text-align: center; /* Center align all p elements */
+  text-align: center;
+  font-size: 25px; /* Center align all p elements */
 }
 
 h2 {
   text-align: center;
-  font-size: 100px; /* Center align all h2 elements */
+  font-size: 100px;
+  justify-content: center; /* Center align all h2 elements */
 }
 
 .bg-title {
@@ -45,7 +47,7 @@ h2 {
   text-align: center;
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 42%;
   color: white;
 }
 
@@ -55,9 +57,11 @@ h2 {
   justify-content: center;
   align-items:center;
   counter-reset: item;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  width: 25%;
 
-  
 }
 
 .ingredients-list {
@@ -65,7 +69,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  width: 100%
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 25px;
 } 
 
 .directions > li {
@@ -81,5 +88,14 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
   width: 25%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #333;
+  margin: 20px auto; /* Centers the line */
+  width: 25%; /* Adjust the width as needed */
 }
