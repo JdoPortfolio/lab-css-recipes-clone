@@ -23,14 +23,13 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /* Write your CSS below */
 /* CSS */
 
-/* CSS */
-
 p {
   text-align: center; /* Center align all p elements */
 }
 
 h2 {
-  text-align: center; /* Center align all h2 elements */
+  text-align: center;
+  font-size: 100px; /* Center align all h2 elements */
 }
 
 .bg-title {
@@ -40,7 +39,6 @@ h2 {
   background-repeat: no-repeat;
   width: 100vw;
   height: 45vh;
- 
 }
 
 .bg-title h2 {
@@ -48,7 +46,6 @@ h2 {
   position: absolute;
   top: 20%;
   left: 50%;
-  
   color: white;
 }
 
@@ -58,6 +55,8 @@ h2 {
   justify-content: center;
   align-items:center;
   counter-reset: item;
+  width: 100%;
+
   
 }
 
@@ -66,19 +65,21 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items:center;
- 
-
+  width: 100%
 } 
 
 .directions > li {
   list-style-type: none
 }
 
-
-
 .directions > li::before {
   content: counter(item) ") ";
   counter-increment: item;
 }
 
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
